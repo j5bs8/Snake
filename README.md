@@ -25,5 +25,8 @@ Snake game made on python with pygame. It has 4 main classes including Game clas
   - draw_score() method draws last result score after game over
   - draw() method which draws menu
 
+By pressing SPACE you can restart the game at any state
+
 This is my first experience in creating game with OOP structure so please don't judge to much)
+
 Enjoy!
