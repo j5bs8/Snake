@@ -114,12 +114,16 @@ class Snake:
     def check_borders(self):
         if (self.rect.right > self.area.right):
             self.rect.left = 0
+            self.segments.append(self.rect.copy())
         elif (self.rect.left < self.area.left):
             self.rect.right = self.area.right
+            self.segments.append(self.rect.copy())
         elif (self.rect.top < self.area.top):
             self.rect.bottom = self.area.bottom
+            self.segments.append(self.rect.copy())
         elif (self.rect.bottom > self.area.bottom):
             self.rect.top = 0
+            self.segments.append(self.rect.copy())
     
     def check_self_eating(self):
         if (self.rect in self.segments[-self.length:-1]):
